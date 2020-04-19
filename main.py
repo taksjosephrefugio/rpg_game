@@ -5,6 +5,16 @@ magic = [{"name": "Fire", "cost":10, "dmg": 60},
 		 {"name": "Blizzard", "cost":10, "dmg": 60}]
 
 player = Person(460, 65, 60, 34, magic)
+enemy = Person(1200, 65, 45, 25, magic)
 
-print(player.generate_spell_damage(0))
-print(player.generate_spell_damage(1))
+running = True
+
+print(bcolors.FAIL + bcolors.BOLD + "AN ENEMY ATTACKS!" + bcolors.ENDC)
+
+while running:
+	print("==============================")
+	player.choose_magic()
+	# choice = input("Choose action:")
+	running = False
+
+# TO-DO: go to classes/game.py

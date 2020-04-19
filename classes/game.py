@@ -61,12 +61,13 @@ class Person:
 		i = 1
 		print("Actions")
 		for item in self.actions:
-			print(str(i) + ":", item)
+			print(str(i) + ": " + item)
 			i += 1
 
+	# TO-DO: Implement column alignment for much better printing readability
 	def choose_magic(self):
 		i = 1
 		print("Magic")
 		for spell in self.magic:
-			print(str(i) + ":", spell["name"], "(cost:", str(spell["mp"]) + ")")
+			print(str(i) + ":" + spell["name"] + "\t(cost:", str(spell["cost"]) + ")")
 			i += 1
