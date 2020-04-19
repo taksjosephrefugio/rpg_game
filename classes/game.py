@@ -32,7 +32,7 @@ class Person:
 
 	def take_damage(self, dmg):
 		self.hp -= dmg
-		if self.hp < 0
+		if self.hp < 0:
 			self.hp = 0
 		return self.hp
 
